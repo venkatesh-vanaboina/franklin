@@ -1,0 +1,13 @@
+.textcolor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text {
+    background-color: #F0F0F0;
+    padding: 50px;
+    width: 30rem;
+    margin: 26px 0 0 26px;
+}
