@@ -53,9 +53,11 @@
 
 .img img {
     border-radius: 13rem;
-    width: 42%;
-    height: 112%;
-    left: 10rem;
+    width: 18rem !important;
+    height: 18rem !important;
+    object-fit: cover;
+    left: 5rem;
+    top: 2rem;
     position: relative;
 }
 
@@ -88,12 +90,15 @@
     left: -12%;
     top: 12.6rem;
 }
+.last-step::after {
+    content: none;
+}
 
 .right-div {
     width: 60%;
     padding: 2rem 1rem 2rem 1rem;
     position: relative;
-    bottom: 1rem;
+    top: 1rem;
 }
 
 .reference {

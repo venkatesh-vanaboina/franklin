@@ -1,5 +1,6 @@
 export default function decorate(block) {
-    [...block.children].forEach((row,rowindex) => {
+    const rows = [...block.children];
+    rows.forEach((row,rowindex) => {
         let url = null;
         row.classList.add("parent");
 
@@ -33,7 +34,13 @@ export default function decorate(block) {
                 content.classList.add("img")
              } else if (index == 1) {
                 content.classList.add("step");
-                content.querySelectorAll("p").forEach(p => p.classList.add("step-text"));
+                content.querySelectorAll("p").forEach((p) => {
+                    p.classList.add("step-text");
+
+                if(rowindex === rows.length - 1){
+                    p.classList.add("last-step");
+                }
+            })
             
             } else if (index === 4)  {
                 const button = document.createElement("a");
