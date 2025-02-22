@@ -1,16 +1,3 @@
-/* .step {
-    width: 2.7rem;
-    background-color: rgb(13 49 114);
-    border-radius: 0.25rem;
-    height: 2.7rem;
-   
-}
-
-.step-text {
-    color: white;
-    padding: 6px;
-    margin-left: 9px;
-} */
 .section.timeline-container {
     margin-left: auto;
     margin-right: auto;
@@ -115,4 +102,66 @@
     background-color:  #000;
     color: #fff !important;
     text-decoration: none;
+}
+
+/* Mobile styling */
+
+@media (min-width: 0px) and (max-width: 374px) {
+    .img {
+        display: none;
+    }
+    .parent-reverse {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1023px) {
+    .img {
+        display: none;
+
+    }
+    .parent-reverse {
+        flex-direction: row;
+    }
+    .right-div {
+        top: 0;
+        right: 2rem;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .text p {
+        font-size: 20px;
+    }
+    .reference {
+        padding: 12px 22px;
+    }
+    .step-text {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .step-text::after {
+        height: 18rem;
+        top: 9.6rem;
+          z-index: -1;
+    }
+}
+
+@media (max-width: 705px) {
+    .step-text::after {
+        height: 22rem;
+        top: 10.6rem;
+    }
+}
+@media (max-width: 486px) {
+    .step-text::after {
+        height: 25rem;
+        top: 12.6rem;
+    }
+}
+@media (max-width: 389px) {
+    .step-text::after {
+        height: 30rem;
+        top: 14.6rem;
+    }
 }

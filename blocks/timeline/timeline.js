@@ -5,7 +5,7 @@ export default function decorate(block) {
         row.classList.add("parent");
 
         if(rowindex % 2 !==0){
-            row.classList.add("parent-reverse")
+            row.classList.add("parent-reverse");
         }
         
         [...row.children].forEach((content,index) => {
@@ -25,7 +25,7 @@ export default function decorate(block) {
                 h2.textContent = content.textContent;
                 
                 content.replaceWith(h2);
-                rightDiv.appendChild(h2)
+                rightDiv.appendChild(h2);
                 
             } else if (index === 3) {
                 content.classList.add("text");
